@@ -64,3 +64,20 @@ string gameToFind = "Super Mario Odyssey";
 // 2. Task scheduling in operating systems
 // 3. Breadth-first search (BFS) in graph algorithms
 // 4. Handling requests in web servers
+
+
+
+// Priority Queue ==> A data structure where each element has a priority, and elements are served based on their priority (higher priority first)
+PriorityQueue<string, int> videoGamesPriorityQueue = new PriorityQueue<string, int>();
+videoGamesPriorityQueue.Enqueue("The Legend of Zelda: Breath of the Wild", 1); // Higher priority
+videoGamesPriorityQueue.Enqueue("Super Mario Odyssey", 2);
+videoGamesPriorityQueue.Enqueue("Animal Crossing: New Horizons", 3); // Lower priority
+
+// Dequeue the highest priority game
+string highestPriorityGame = videoGamesPriorityQueue.Dequeue(); // Removes "The Legend of Zelda: Breath of the Wild" from the queue                                                                //Console.WriteLine($"The highest priority game is: {highestPriorityGame}");
+
+// Uses of Priority Queue
+// 1. Dijkstra's algorithm for shortest path
+// 2. A* search algorithm
+// 3. Task scheduling with different priorities
+
